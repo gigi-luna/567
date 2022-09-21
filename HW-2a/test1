@@ -1,0 +1,72 @@
+Running unit tests
+FFF.FFF
+======================================================================
+FAIL: testEquilateralTriangles (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/gigiluna/Documents/stevens/SSW-567/HW2a/TestTriangle.py", line 34, in testEquilateralTriangles
+    self.assertEqual(classifyTriangle(1, 1, 1),
+AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+ : 1,1,1 should be equilateral
+
+======================================================================
+FAIL: testIsoscelesTriangles (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/gigiluna/Documents/stevens/SSW-567/HW2a/TestTriangle.py", line 44, in testIsoscelesTriangles
+    self.assertEqual(classifyTriangle(1, 2, 2), 'Isosceles')
+AssertionError: 'InvalidInput' != 'Isosceles'
+- InvalidInput
++ Isosceles
+
+
+======================================================================
+FAIL: testNotTriangle (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/gigiluna/Documents/stevens/SSW-567/HW2a/TestTriangle.py", line 48, in testNotTriangle
+    self.assertEqual(classifyTriangle(10, 20, 100), 'NotATriangle')
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+
+
+======================================================================
+FAIL: testRightTriangleA (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/gigiluna/Documents/stevens/SSW-567/HW2a/TestTriangle.py", line 22, in testRightTriangleA
+    self.assertEqual(classifyTriangle(3, 4, 5), 'Right',
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+ : 3,4,5 is a Right triangle
+
+======================================================================
+FAIL: testRightTriangleB (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/gigiluna/Documents/stevens/SSW-567/HW2a/TestTriangle.py", line 28, in testRightTriangleB
+    self.assertEqual(classifyTriangle(5, 3, 4), 'Right',
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+ : 5,3,4 is a Right triangle
+
+======================================================================
+FAIL: testScaleneTriangles (__main__.TestTriangles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/gigiluna/Documents/stevens/SSW-567/HW2a/TestTriangle.py", line 40, in testScaleneTriangles
+    self.assertEqual(classifyTriangle(3, 5, 7), 'Scalene')
+AssertionError: 'InvalidInput' != 'Scalene'
+- InvalidInput
++ Scalene
+
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.007s
+
+FAILED (failures=6)
